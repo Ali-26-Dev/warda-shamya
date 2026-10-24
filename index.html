@@ -3,59 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>وردة شامية | Warda Shamya - قريباً في أمدرمان</title>
+<title>وردة شامية - مطعم سوري في أم درمان</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Tajawal',Tahoma}
-body{background:#0a0a0a;color:#fff;line-height:1.6}
-header{background:linear-gradient(135deg,#1a0000,#ff4500);padding:60px 20px;text-align:center}
-header h1{font-size:3.5rem;letter-spacing:2px}
-header h1 span{color:#ffd700}
-.coming{ background:#ffd700; color:#000; display:inline-block; padding:5px 15px; border-radius:20px; font-weight:bold; margin-top:15px; animation: pulse 2s infinite}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
-.container{max-width:1000px;margin:auto;padding:30px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:30px 0}
-.card{background:linear-gradient(145deg,#1e1e1e,#161616);border:1px solid #333;padding:25px;border-radius:18px;transition:0.3s}
-.card:hover{transform:translateY(-5px);border-color:#ff4500}
-.card h3{color:#ff8a00;font-size:1.3rem}
-.price{color:#00ff88;font-weight:bold;font-size:1.2rem;margin-top:10px}
-.btns{margin:40px 0}
-.btn{display:inline-block;padding:16px 32px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:1.1rem;margin:10px;transition:0.3s}
-.btn-wp{background:#25D366;color:#fff}
-.btn-gh{background:#fff;color:#000}
-footer{background:#111;padding:25px;color:#777;text-align:center;border-top:1px solid #222}
-footer b{color:#fff}
+body{margin:0;font-family:'Tajawal',sans-serif;background:#fffaf5;color:#333}
+.hero{position:relative;height:60vh;background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.45);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.logo{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.6);padding:15px 25px;border-radius:15px;color:#fff;text-align:right}
+.logo h1{margin:0;font-size:32px}.logo p{margin:5px 0 0;font-size:14px}
+.btn-book{border:2px solid #fff;color:#fff;padding:12px 35px;border-radius:30px;background:transparent;font-size:20px;cursor:pointer}
+.section{padding:40px 20px;text-align:center}
+.section h2{color:#5a3210;font-size:28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:800px;margin:30px auto}
+.card img{width:100%;height:200px;object-fit:cover;border-radius:20px}
+.card h3{margin:10px 0 5px}.badge{background:#fde9b0;padding:3px 10px;border-radius:10px;font-size:12px}
+.price{color:#b45309;font-weight:bold;font-size:18px}
+.surprise{color:#5a3210;font-weight:bold}
 </style>
 </head>
 <body>
-<header>
-<h1>🌹 وردة <span>شامية</span></h1>
-<p style="font-size:1.3rem;margin-top:10px">مطعم سوري أصيل .. بطعم الشام في قلب أمدرمان</p>
-<div class="coming">🚧 قريباً الافتتاح - Coming Soon 🚧</div>
-<p style="margin-top:15px;color:#ffccaa">Stage 03 - DevOps & GitHub Pro | Ali-26-Dev</p>
-</header>
 
-<div class="container">
-<h2 style="text-align:center;font-size:2rem">🍽️ المنيو المبدئي</h2>
-<div class="grid">
-<div class="card"><h3>🥙 شاورما دجاج شامية</h3><p>متبلة 24 ساعة بخلطة حلبية</p><div class="price">3,500 SDG</div></div>
-<div class="card"><h3>🥩 شاورما لحم</h3><p>لحم عجل طازج مع طحينة</p><div class="price">4,000 SDG</div></div>
-<div class="card"><h3>🧆 فلافل ذهبية</h3><p>مقرمشة من برا، طرية من جوا</p><div class="price">1,500 SDG</div></div>
-<div class="card"><h3>🔥 مشاوي مشكلة</h3><p>كباب، كفتة، شيش طاووق</p><div class="price">6,000 SDG</div></div>
+<div class="hero">
+  <div class="logo">
+    <h1>وردة شامية</h1>
+    <p>مطعم سوري • أم درمان، السودان</p>
+  </div>
+  <div class="hero-overlay">
+    <button class="btn-book">احجز طاولة</button>
+  </div>
 </div>
 
-<div class="btns">
-<a class="btn btn-wp" href="https://wa.me/249900000000?text=السلام عليكم وردة شامية، عايز اسجل اهتمامي بالافتتاح" target="_blank">سجل اهتمامك واتساب 📲</a>
-<a class="btn btn-gh" href="https://github.com/Ali-26-Dev/warda-shamya" target="_blank">شوف الكود في GitHub 💻</a>
+<div class="section">
+  <h2>أصالة الشام في قلب أم درمان</h2>
+  <p>منذ افتتاحنا في أم درمان، نلتزم في "وردة شامية" بتقديم أطيب النكهات الشامية الأصيلة.</p>
+  
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1525183995014-b329225b9407">
+      <h3>شاورما دجاج</h3><div class="price">SDG 7,000</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+      <h3>شاورما لحم</h3><div class="price">SDG 9,000</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641">
+      <h3>فلافل ذهبية</h3><div class="price">SDG 2,000</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534422298391-e4f1991d322a">
+      <h3>مشاوي مشكلة</h3><div class="price">SDG 10,000</div>
+    </div>
+    <div class="card" style="grid-column: span 2; background:#fff8e1; padding:15px; border-radius:20px; border:2px dashed #d4a017">
+      <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0">
+      <h3>🔥 كرسبي فاهيتا - مفاجأة ليلة الافتتاح</h3>
+      <div class="surprise">مقرمشة ولذيذة • جديد <span class="badge">مفاجأة الافتتاح</span></div>
+    </div>
+  </div>
 </div>
 
-<p style="color:#aaa">المطعم لسه ما فتح، لكن الموقع جاهز. دي حركة Tech Leader - تبني الـ hype قبل الافتتاح.</p>
-</div>
-
-<footer>
-<p><b>Built by Ali-26-Dev</b> - Omdurman, Sudan 🇸🇩</p>
-<p>Roadmap 2026: Consistency + Practice + AI = Success</p>
-<p style="margin-top:10px">GitHub: @Ali-26-Dev | warda-shamya v1.0</p>
-</footer>
 </body>
-  </html>
+      </html>
